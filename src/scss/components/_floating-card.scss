@@ -1,0 +1,123 @@
+.bg-dark {
+    padding-top: 3rem;
+}
+.floating-carousel {
+    position: absolute;
+    right: 10%;
+    top: 80vh;
+}
+.carousel{
+    max-width: 420px;
+}
+.carousel-inner img {
+    width: 100%;
+}
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.floating-card {
+    background: #fff;
+    position: absolute;
+    top: calc(100vh - 70px);
+
+    .floating-card-container {
+        width: 55%;
+        margin-left: 15%;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .floating-card-heading {
+        font-size: 30px;
+        line-height: 37.71px;
+    }
+    .floating-content {
+        color: #646d70;
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+.h-180 {
+    height: 180px;
+}
+.h-140 {
+    background-color: #646d70;
+    height: 140px;
+}
+
+.innovatie {
+    margin: 80px 0;
+
+    .innovatie-heading {
+        font-size: 30px;
+    }
+    .paragraph {
+        opacity: 0.7;
+        line-height: 24px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    // screen size < 992px
+
+
+    .h-180 {
+        display: none;
+    }
+    .h-140 {
+        display: none;
+    }
+    .innovatie {
+        margin: 0;
+        .innovatie-heading {
+            font-size: 30px;
+        }
+        .paragraph {
+            line-height: 24px;
+            font-size: 14px;
+        }
+    }
+    
+    .floating-card{
+        position: relative;
+        top: unset;
+        .floating-card-container {
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    // screen size < 767px
+
+    .floating-carousel {
+        position: relative;
+        right: unset;
+        top: unset;
+        .carousel{
+            margin: 0 auto;
+        }
+    }
+
+    
+    .innovatie {
+        .innovatie-heading{padding: 0;}
+        .paragraph {
+            padding:0;
+        }
+    }
+    .bg-dark{
+        padding-top: 3rem;
+    }
+}

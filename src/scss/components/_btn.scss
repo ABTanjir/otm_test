@@ -1,0 +1,34 @@
+$outline-bg: #FFF;
+
+.btn-outline {
+    @include button-variant($outline-bg, darken($outline-bg, 3%));
+    padding: 15px 30px;
+    color: #606B74;
+    border: 3px solid #646D70;
+    background-color: Transparent;
+    &:hover{
+        color: #FFF;
+        background-color: #646D70;
+    }
+}
+
+.btn-play {
+    background-color: #fff;
+    height: 32px;
+    width: 32px;
+    display: table-cell;
+    margin-right: 5px;
+    img {
+        height: 20px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    // screen size < 992px
+    .btn-outline{
+        border: 1px solid #646D70;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}

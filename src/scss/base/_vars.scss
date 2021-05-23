@@ -1,0 +1,45 @@
+/**
+ * Variables
+*/
+
+/* Typography */
+/* Breakpoints */
+/* Paths */
+/* Grid setup */
+/* Colour palette */
+$black: #000;
+$dark: #222F33;
+$white: #fff;
+$light-gray: #f1f1f1;
+
+$body-background-color: #333;
+$foreground-color: #fff;
+$caption-color: #464646;
+$accent-color: #999;
+$link-color: #FFF;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1700px
+);
+
+$font-size-heading: 65px;
+$font-size-md-heading: 30px;
+
+$font-family-heading: 'Merriweather';
+$font-family-base: 'Rubik';
+
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+) !default;

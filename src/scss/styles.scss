@@ -1,0 +1,162 @@
+body {
+    background: $body-background-color;
+    color: $foreground-color;
+    font-size: 1.3em;
+}
+
+header {
+    font-size: 1.6em;
+    padding: 60px 30px 30px;
+    background-size: 160px;
+    margin: 0;
+    position: relative;
+
+    small {
+        font-size: 0.5em;
+
+        img {
+            display: inline;
+            width: 20px;
+        }
+    }
+}
+
+main {
+    background: $foreground-color;
+    color: $black;
+    margin: 0;
+    
+
+    h1 {
+        font-family: $font-family-heading;
+        font-size: 2em;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    h2 {
+        font-family: $font-family-heading;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-family: $font-family-heading;
+        font-weight: bold;
+        padding: 10px;
+    }
+}
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: $black;
+    }
+}
+
+address {
+    color: $accent-color;
+}
+
+pre {
+    margin: 10px;
+    padding: 20px;
+
+    code {
+        display: block;
+        background: $body-background-color;
+        color: $white;
+        padding: 10px;
+        border-left: 6px solid $link-color;
+    }
+}
+
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+ul ul,
+ol ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+ol ol,
+ul ol {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+
+
+@keyframes octocat-wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-25deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner {
+        &:hover {
+            .octo-arm {
+                animation: none;
+            }
+        }
+
+        .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    main {
+        h1 {
+            font-size: 1.3em;
+        }
+
+        h2 {
+            font-size: 1.1em;
+        }
+    }
+}
+
+
+
+
+@media(min-width: 1400px) {
+
+    .container {
+        max-width: 1320px;
+    }
+}
